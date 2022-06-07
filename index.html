@@ -1,0 +1,67 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <script src="index.js"></script>
+        <div class="container">
+            <div class="row border border-dark mt-5" style="height:200px; pointer-events: none;">
+              <div id="00" class="col-sm border border-dark" style="height:100%;" onclick="displaySymbol(this.id)">
+                <img id ="00-cross" src="cross.png" style="height: 100%; width:100%; display: none;"/>
+                <img id ="00-circle" src="circle.png" style="height: 100%; width:100%; display: none;"/>
+              </div>
+              <div id="01" class="col-sm border border-dark" style="height:100%;"  onclick="displaySymbol(this.id)">
+                <img id ="01-cross" src="cross.png" style="height: 100%; width:100%; display: none;"/>
+                <img id ="01-circle" src="circle.png" style="height: 100%; width:100%; display: none;"/>
+              </div>
+              <div id="02" class="col-sm border border-dark" style="height:100%;" onclick="displaySymbol(this.id)">
+                <img id ="02-cross" src="cross.png" style="height: 100%; width:100%; display: none;"/>
+                <img id ="02-circle" src="circle.png" style="height: 100%; width:100%; display: none;"/>
+              </div>
+            </div>
+            <div class="row border border-dark" style="height:200px; pointer-events: none;">
+                <div id="10" class="col-sm border border-dark" style="height:100%;" onclick="displaySymbol(this.id)">
+                    <img id ="10-cross" src="cross.png" style="height: 100%; width:100%; display: none;"/>
+                    <img id ="10-circle" src="circle.png" style="height: 100%; width:100%; display: none;"/>
+                </div>
+                <div id="11" class="col-sm border border-dark" style="height:100%;" onclick="displaySymbol(this.id)">
+                    <img id ="11-cross" src="cross.png" style="height: 100%; width:100%; display: none;"/>
+                    <img id ="11-circle" src="circle.png" style="height: 100%; width:100%; display: none;"/>
+                </div>
+                <div id="12" class="col-sm border border-dark" style="height:100%;"  onclick="displaySymbol(this.id)">
+                    <img id ="12-cross" src="cross.png" style="height: 100%; width:100%; display: none;"/>
+                    <img id ="12-circle" src="circle.png" style="height: 100%; width:100%; display: none;"/>
+                </div>
+              </div>
+
+              <div  class="row border border-dark" style="height:200px; pointer-events: none;">
+                <div id="20" class="col-sm border border-dark" style="height:100%;" onclick="displaySymbol(this.id)">
+                    <img id ="20-cross" src="cross.png" style="height: 100%; width:100%; display: none;"/>
+                    <img id ="20-circle" src="circle.png" style="height: 100%; width:100%; display: none;"/>
+                </div>
+                <div id="21" class="col-sm border border-dark" style="height:100%;" onclick="displaySymbol(this.id)">
+                    <img id ="21-cross" src="cross.png" style="height: 100%; width:100%; display: none;"/>
+                    <img id ="21-circle" src="circle.png" style="height: 100%; width:100%; display: none;"/>
+                </div>
+                <div id="22" class="col-sm border border-dark" style="height:100%;" onclick="displaySymbol(this.id)">
+                    <img id ="22-cross" src="cross.png" style="height: 100%; width:100%; display: none;"/>
+                    <img id ="22-circle" src="circle.png" style="height: 100%; width:100%; display: none;"/>
+                </div>
+              </div>
+              <div style="display: flex; justify-content: center; margin-top: 5px;">
+              <button type="button" class="btn btn-dark" style="margin-right: 5px;" id="1" onclick="symbolChoose(this.id)">X</button>
+              <button type="button" class="btn btn-danger" id="0" onclick="symbolChoose(this.id)">O</button>
+              <h2 style="display:none;" id="t-1">1</h2>
+              <h2 style="display:none;" id="t-2">2</h2>
+              <h2 style="display:none;" id="t-3">3</h2>
+              <h2 style="display:none;" id="start">Lets Start!</h2>
+              <h2 style="display:none;" id="timer-1">00:00</h2>
+              <h2 style="display:none;" id="timer-2">00:00</h2>
+              
+              </div>
+              <div style="display: flex; justify-content: center; margin-top: 5px;">
+                <h1 style="display:none;" id="winner-disp"></h1>
+              </div>
+        </div>
+    </body>
+</html>
